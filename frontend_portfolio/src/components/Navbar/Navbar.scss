@@ -4,10 +4,10 @@
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
-  background: rgba(255, 255, 255, 0.25);
+  background: #121212ee;
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
-  border: 1px solid rgba(255, 255, 255, 0.18);
+  border: 1px solid rgba(255, 255, 255, 0.888);
   position: fixed;
   z-index: 2;
 }
@@ -49,7 +49,7 @@
     }
 
     a {
-      color: var(--gray-color);
+      color: var(--lightGray-color);
       text-decoration: none;
       flex-direction: column;
       text-transform: uppercase;
@@ -85,7 +85,7 @@
   svg {
     width: 70%;
     height: 70%;
-    color: var(--white-color);
+    color: var(--dark-color);
   }
 
   div {
@@ -95,13 +95,60 @@
     right: 0;
     z-index: 5;
     padding: 1rem;
-    width: 50%;
+    width: 40%;
     height: 100vh;
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
     flex-direction: column;
-    background: var(--white-color);
+    background-color: var(--dark-color);
+    background-size: cover;
     background-repeat: repeat;
+
+    box-shadow: 0 0 20px rgba(91, 91, 91, 0.15);
+
+    svg {
+      width: 35px;
+      height: 35px;
+      color: var(--lightGray-color);
+      margin: 0.5rem 1rem;
+    }
+
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      width: 100%;
+
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-start;
+      flex-direction: column;
+
+      li {
+        margin: 1rem;
+
+        a {
+          color: var(--lightGray-color);
+          text-decoration: 0;
+          font-size: 1rem;
+          text-transform: uppercase;
+          font-weight: 500;
+          transition: all 0.3s ease-in-out;
+
+          &:hover {
+            color: var(--secondary-color);
+          }
+        }
+      }
+    }
+
+    @media screen and (min-width: 900px) {
+      display: none;
+    }
+  }
+  @media screen and (min-width: 900px) {
+    display: none;
   }
 }
