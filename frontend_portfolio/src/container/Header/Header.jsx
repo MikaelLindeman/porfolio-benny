@@ -32,7 +32,8 @@ const Header = () => {
           </div>
           <div className="tag-cmp app__flex">
             <p className="p-text">Game designer</p>
-            <p className="p-text">Bonobo </p>
+            <p className="p-text">Adventurer </p>
+            <p className="p-text">Visionary </p>
           </div>
         </div>
       </motion.div>
@@ -47,7 +48,7 @@ const Header = () => {
         <motion.img
           whileInView={{ scale: [0, 1] }}
           transition={{ duration: 1, ease: "easeInOut" }}
-          src={images.purpleBg}
+          src={images.circle}
           alt="profile background"
           className="overlay_circle"
         />

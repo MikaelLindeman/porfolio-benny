@@ -61,10 +61,11 @@ svg {
   .tag-cmp {
     padding: 1rem 2rem;
 
-    border: var(--white-color);
+    border: #99a4aa;
     border-radius: 15px;
     flex-direction: row;
     width: auto;
+    background-color: #202020;
     box-shadow: 0 0 20px #131313;
   }
   .tag-cmp {
@@ -104,7 +105,7 @@ svg {
     width: 100px;
     height: 100px;
     border-radius: 50%;
-    background-color: var(--white-color);
+    background-color: #67a6c8;
     box-shadow: 0 0 20px #131313;
 
     img {
