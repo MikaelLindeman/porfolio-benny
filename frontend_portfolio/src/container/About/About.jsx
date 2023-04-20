@@ -33,7 +33,7 @@ const About = () => {
         className="head-text"
         style={{
           textTransform: "uppercase",
-          width: "80%",
+          width: "70%",
           margin: "0 auto",
           textAlign: "start",
           fontSize: "2rem",
@@ -43,7 +43,10 @@ const About = () => {
         "The beauty of <span>Game development </span>is that you get to create{" "}
         <span>something from nothing</span> and see it come to life in ways you
         never imagined." <br />
-        <h4 style={{ textAlign: "end" }}> - Hideo Kojima </h4>
+        <h4 style={{ textAlign: "end", fontSize: "1.75rem" }}>
+          {" "}
+          - Hideo Kojima{" "}
+        </h4>
       </h2>
 
       {/* <h2 className="head-text" style={{ textTransform: "uppercase" }}>

@@ -1,4 +1,4 @@
-app__about {
+.app__about {
   flex: 1;
   width: 100%;
   flex-direction: column;
@@ -34,5 +34,11 @@ app__about {
     img {
       height: 320px;
     }
+  }
+}
+
+.head-text {
+  @media screen and (max-width: 1200px) {
+    font-size: 1.5rem !important;
   }
 }
