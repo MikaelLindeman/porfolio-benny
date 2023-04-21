@@ -18,7 +18,6 @@ const About = () => {
       <h2
         className="head-text"
         style={{
-          // textTransform: "uppercase",
           width: "70%",
           margin: "0 auto",
           textAlign: "start",
