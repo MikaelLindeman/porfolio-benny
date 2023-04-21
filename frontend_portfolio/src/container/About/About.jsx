@@ -32,29 +32,25 @@ const About = () => {
       <h2
         className="head-text"
         style={{
-          textTransform: "uppercase",
+          // textTransform: "uppercase",
           width: "70%",
           margin: "0 auto",
           textAlign: "start",
           fontSize: "2rem",
           marginTop: "2rem",
+          fontWeight: "200",
+          fontStyle: "italic",
+          textTransform: "inherit",
         }}
       >
         "The beauty of <span>Game development </span>is that you get to create{" "}
         <span>something from nothing</span> and see it come to life in ways you
         never imagined." <br />
-        <h4 style={{ textAlign: "end", fontSize: "1.75rem" }}>
+        <h4 style={{ textAlign: "end", fontSize: "1.5rem", fontWeight: "200" }}>
           {" "}
           - Hideo Kojima{" "}
         </h4>
       </h2>
-
-      {/* <h2 className="head-text" style={{ textTransform: "uppercase" }}>
-        "The beauty of <span>Game development</span> is that you get to create
-        <span>something from nothing</span> and see it come to life in ways you
-        never imagined." <br />
-        <h4 style={{ textAlign: "end" }}> - Hideo Kojima </h4>
-      </h2> */}
 
       <div className="app__profiles">
         {abouts.map((about, index) => (
