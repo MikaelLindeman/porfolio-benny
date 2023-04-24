@@ -20,7 +20,22 @@ const Projects = () => {
     });
   }, []);
 
-  const handleProjectFilter = (item) => {};
+  const handleProjectFilter = (item) => {
+    setActiveFilter(item);
+    setAnimateCard([{ y: 100, opacity: 0 }]);
+
+    setTimeout(() => {
+      setAnimateCard([{ y: 0, opacity: 1 }]);
+
+      if (item === "All") {
+        setFilterProject(projects);
+      } else {
+        setFilterProject(
+          projects.filter((projects) => projects.tags.includes(item))
+        );
+      }
+    }, 500);
+  };
 
   return (
     <>
@@ -28,7 +43,7 @@ const Projects = () => {
         My creative <span>Projects</span>
       </h2>
       <div className="app__work-filter">
-        {["RTS", "FPS", "Fighter", "Wow"].map((item, index) => (
+        {["Strategy", "FPS", "Fighter", "All"].map((item, index) => (
           <div
             key={index}
             onClick={() => handleProjectFilter(item)}
