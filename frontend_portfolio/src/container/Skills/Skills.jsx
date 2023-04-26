@@ -23,10 +23,10 @@ const Skills = () => {
 
   return (
     <>
-      <h2 className="head-text">Skills & Experince</h2>
+      <h2 className="head-text">Skills & Experience</h2>
       <div className="app__skills-container">
         <motion.div className="app__skills-list">
-          {skills.map((skills) => (
+          {skills.map((skill) => (
             <motion.div
               whileInView={{ opacity: [0, 1] }}
               transition={{ duration: 0.5 }}
