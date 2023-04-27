@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { AiFillEye, AiFillGithub } from "react-icons/ai";
 import { motion } from "framer-motion";
-import { AppWrap } from "../../wrapper";
+import { AppWrap, MotionWrap } from "../../wrapper";
 import { urlFor, client } from "../../client";
 import "./Projects.scss";
 
@@ -113,4 +113,4 @@ const Projects = () => {
   );
 };
 
-export default AppWrap(Projects, "projects");
+export default AppWrap(MotionWrap(Projects, "app__works"), "projects");

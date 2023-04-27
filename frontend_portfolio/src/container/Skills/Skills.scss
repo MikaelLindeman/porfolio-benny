@@ -41,7 +41,7 @@
     width: 90px;
     height: 90px;
     border-radius: 50%;
-    background-color: rgb(81, 79, 76);
+    background-color: #bdceda;
 
     img {
       width: 50%;
@@ -93,6 +93,9 @@
   justify-content: flex-start;
   align-items: flex-start;
   margin: 1rem 0;
+  @media screen and (max-width: 500px) {
+    justify-content: center;
+  }
 }
 
 .app__skills-exp-works {
