@@ -9,6 +9,9 @@ import abouts1 from "../assets/abouts1.jpg";
 import abouts2 from "../assets/abouts2.jpg";
 import abouts3 from "../assets/abouts3.jpg";
 import abouts4 from "../assets/abouts4.png";
+import email from "../assets/email.png";
+import phone from "../assets/phone.png";
+import exclamation from "../assets/exclamation.svg";
 export default {
   logo,
   picture,
@@ -21,4 +24,7 @@ export default {
   abouts2,
   abouts3,
   abouts4,
+  email,
+  phone,
+  exclamation,
 };

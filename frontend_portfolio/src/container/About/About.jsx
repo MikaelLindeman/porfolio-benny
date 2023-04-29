@@ -16,7 +16,7 @@ const About = () => {
 
   return (
     <>
-      <h2
+      <div
         className="head-text"
         style={{
           width: "70%",
@@ -31,12 +31,12 @@ const About = () => {
       >
         "The beauty of <span>Game development </span>is that you get to create{" "}
         <span>something from nothing</span> and see it come to life in ways you
-        never imagined." <br />
+        never <span>imagined.</span>" <br />
         <h4 style={{ textAlign: "end", fontSize: "1.5rem", fontWeight: "200" }}>
           {" "}
           - Hideo Kojima{" "}
         </h4>
-      </h2>
+      </div>
 
       <div className="app__profiles">
         {abouts.map((about, index) => (

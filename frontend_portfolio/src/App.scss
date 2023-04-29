@@ -73,6 +73,17 @@
   }
 }
 
+.reply-text {
+  font-weight: 800;
+  text-align: center;
+  color: var(--black-color);
+  font-size: 2rem;
+
+  span {
+    color: #ffd700;
+  }
+}
+
 .p-text {
   font-size: 0.8rem;
   text-align: left;
