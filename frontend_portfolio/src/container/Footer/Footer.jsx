@@ -98,8 +98,8 @@ const Footer = () => {
           <img src={images.exclamation} alt="exclamation" />
           <h5 className="reply-text">
             New side quest unlocked:{" "}
-            <span className="reply-text">Waiting for my reply </span>
-            <br /> Thanks for reaching out, adventurer.
+            <span className="reply-text">Game Invitation </span>
+            <br /> Thanks for the invite, I'll answer ASAP.
           </h5>
         </div>
       )}
