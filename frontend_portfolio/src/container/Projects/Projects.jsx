@@ -43,7 +43,14 @@ const Projects = () => {
         My creative <span>Projects</span>
       </h2>
       <div className="app__work-filter">
-        {["Strategy", "Narrative", "Fighter", "All"].map((item, index) => (
+        {[
+          ...new Set(
+            projects.flatMap((project) =>
+              project.tags.filter((tag) => tag !== "")
+            )
+          ),
+          "All",
+        ].map((item, index) => (
           <div
             key={index}
             onClick={() => handleProjectFilter(item)}
