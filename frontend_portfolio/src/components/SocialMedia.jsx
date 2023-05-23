@@ -7,6 +7,7 @@ const SocialMedia = () => {
     <div className="app__social">
       <div>
         <a
+          style={{ display: "flex" }}
           href="https://www.instagram.com/benjamin.kalaja/"
           target="_blank"
           rel="noopener noreferrer"
@@ -16,6 +17,7 @@ const SocialMedia = () => {
       </div>
       <div>
         <a
+          style={{ display: "flex" }}
           href="https://www.facebook.com/benjamin.kalaja"
           target="_blank"
           rel="noopener noreferrer"

@@ -13,11 +13,12 @@ const Footer = () => {
   });
   const [isFormSubmitted, setIsFormSubmitted] = useState(false);
   const [loading, setLoading] = useState(false);
+  const [buttonShake, setButtonShake] = useState(false);
 
   const { name, email, message } = formData;
+
   const handleChangeInput = (e) => {
     const { name, value } = e.target;
-
     setFormData({ ...formData, [name]: value });
   };
 
@@ -31,10 +32,23 @@ const Footer = () => {
       message: message,
     };
 
-    client.create(contact).then(() => {
-      setLoading(false);
-      setIsFormSubmitted(true);
-    });
+    client
+      .create(contact)
+      .then(() => {
+        setLoading(false);
+        setIsFormSubmitted(true);
+      })
+      .catch((err) => console.log(err));
+  };
+  const handleButtonClick = () => {
+    if (!name || !email || !message) {
+      setButtonShake(true);
+      setTimeout(() => {
+        setButtonShake(false);
+      }, 500);
+    } else {
+      handleSubmit();
+    }
   };
 
   return (
@@ -89,7 +103,11 @@ const Footer = () => {
               onChange={handleChangeInput}
             />
           </div>
-          <button type="button" className="p-text" onClick={handleSubmit}>
+          <button
+            type="button"
+            className={`p-text ${buttonShake ? "shake" : ""}`}
+            onClick={handleButtonClick}
+          >
             {loading ? "Sending" : "Send Message"}
           </button>
         </div>
